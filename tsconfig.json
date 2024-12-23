@@ -2,13 +2,20 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
+    "moduleResolution":"node",
+    "resolveJsonModule": true , // Optional, if you are using JSON imports
     "declaration": true,
     "declarationMap": true,
     "outDir": "dist",
     "jsx": "react-jsx",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types"],
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
