@@ -1,0 +1,9 @@
+node_modules/
+dist/
+
+index.html
+
+tsconfig.node.json
+tsconfig.app.json
+eslint.config.js
+package-lock.json
