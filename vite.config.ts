@@ -4,6 +4,11 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': '/src', // Ensure that '@' maps to the src directory
+    },
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
